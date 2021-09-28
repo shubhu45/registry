@@ -45,7 +45,7 @@ export default function HomeComponent(){
                 dataLength={items.length}
                 next={fetchMoreData}
                 hasMore={hasMore}
-                loader={<h4>Loading more results...</h4>}
+                loader={items.length < 1 ?<h4>Loading initial data...</h4> :<h4>Loading more results...</h4>}
                 endMessage={
                     <p style={{ textAlign: "center" }}>
                     <b>You have reaced at end of the page</b>
