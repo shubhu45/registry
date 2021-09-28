@@ -1,0 +1,30 @@
+.login-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #fefbf5;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+    input{
+        padding: 10px;
+    }
+
+    span{
+        margin-top: 30px;
+    }
+
+    button{
+        padding: 10px;
+        color: #fff;
+        background-color: #0f62fe;
+        border: 1px solid transparent;
+        width: 154px;
+        cursor: pointer;
+    }
+}

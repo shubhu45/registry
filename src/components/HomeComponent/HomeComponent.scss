@@ -1,0 +1,26 @@
+.home-container{
+    padding-top: 80px;
+    .card{
+        padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    }
+    button{
+        padding: 10px;
+        color: #fff;
+        background-color: #0f62fe;
+        border: 1px solid transparent;
+        width: 154px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .row{
+        display: flex;
+    }
+    .list-title {
+        margin-left: 10px;
+    }
+}
