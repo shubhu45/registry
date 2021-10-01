@@ -8,12 +8,7 @@ export default function HomeComponent(){
     let history = useHistory();
     let [items,setItems] = useState([])
     let [hasMore, setHasMore] = useState(true)
-    let handleLogout = () => {
-        localStorage.setItem('isLoggedIn',false)
-        history.push('/')
-    }
-
-    console.log("Items are---",items)
+   
     useEffect(()=>{
         fetchMoreData()
     },[])
@@ -39,8 +34,8 @@ export default function HomeComponent(){
     }
     return(
         <div className='home-container'>
-            <h1 className="list-title">Users List : -</h1>
-            <button onClick={handleLogout}>Log out</button>
+            <h1 className="list-title">Users List</h1>
+            <hr/>
             <InfiniteScroll
                 dataLength={items.length}
                 next={fetchMoreData}
@@ -56,15 +51,15 @@ export default function HomeComponent(){
             {items.map((item,index) => (
                 <div className='card' key={index}>
                     <div className="row">
-                        <p>User Id : - </p>
+                        <p className="card-title">User Id - </p>
                         <p>{item.id}</p>
                     </div>
                     <div className="row">
-                        <p>User Name:-</p>
+                        <p className="card-title">User Name - </p>
                         <p>{item.name}</p>
                     </div>
                     <div className="row">
-                        <p>User Name:-</p>
+                        <p className="card-title">User Name - </p>
                         <p>{item.website}</p>
                     </div>                    
                 </div>

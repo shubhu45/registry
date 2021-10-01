@@ -1,0 +1,37 @@
+.header-component{
+    height: 3.125rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #323754;
+
+    .app-title{
+        font-size: 1rem;
+        color: rgba(229,231,232,0.75);
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 3.125rem;
+        height: 3.125rem;
+        margin: 0 1.25rem;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .logout-button{
+        position: fixed;
+        right: 10px;
+        top: 0px;
+        font-size: 1rem;
+        color: rgba(229,231,232,0.75);
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 3.125rem;
+        height: 3.125rem;
+        margin: 0 1.25rem;
+        display: block;
+        cursor: pointer;
+    }
+}

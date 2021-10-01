@@ -1,10 +1,13 @@
 .home-container{
-    padding-top: 80px;
+    background-color: #f3f3f3;
+    padding-top: 20px;
     .card{
         padding: 20px;
-    border: 1px solid black;
-    margin: 10px;
-    }
+        border-radius: 3px;
+        margin: auto;
+        margin-bottom: 10px;
+        max-width: 800px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);    }
     button{
         padding: 10px;
         color: #fff;
@@ -22,5 +25,27 @@
     }
     .list-title {
         margin-left: 10px;
+        font-size: 24px;
+        color: #46535e;
+        font-weight: normal;
+        text-align: center;
+    }
+    p{
+        color: #46535e;
+    }
+    .card-title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    hr{
+        max-width: 800px;
+        margin-bottom: 0px;
+        background-color:rgba(156,163,168,0.4);
+        height: 1px;
+        border: none;
+    }
+    h4{
+        color: #46535e;
+        text-align: center;
     }
 }

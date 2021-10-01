@@ -40,7 +40,7 @@ export default function LoginComponent(){
                 <p>Password:</p>
                 <input type='password' placeholder="Enter password..." onChange={(e)=>setPassword(e.target.value)}></input>
             </div>
-            <span><button onClick={handleLogin}>Login</button></span>
+            <span><button onClick={()=>{handleLogin()}}>Login</button></span>
         </div>
     )
    }
